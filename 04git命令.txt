@@ -1,0 +1,46 @@
+1. git init  #初始化本地git仓库 .git这个文件夹
+2. git config --global user.name "名字" #配置信息 配置一个名字
+git config --global user.email "email@xx.com" #配置信息 配置一个邮箱
+3. git status  #查看当前版本状态(是不是修改了，不是提交到缓存区或仓库了)
+git status -s  #显示 显示简短写法
+
+4. git add "file" #添加文件到缓存区
+git add .   #添加工作区的所有文件到缓存区
+
+5. git commit -m "文字说明"  # 把缓存区内容提交到版本库
+
+6. git log    #显示提交日志
+git log --oneline  #一行显示提交日志
+git log -1  #显示一条日志 
+git log -n  #-n 显示 n条日志
+
+7. git show  提交码   #显示某个提交详细内容
+git show dfb02  #显示某个提交内容（简短）
+8.git show head #显示当前 提交日志
+git show head^   #显示head的上一个提交日志
+git show head^^ #显示head的上二个提交日志
+
+9. git rm "file" #删除index的文件 但是文件必须提交到仓库后
+git rm *  #递归删除
+git rm "file" -f  #强制删除（不用提交仓库了）
+
+10 git reset --hard head #将当前版本重置为HEAD(通常用于失败回退)
+11 git checkout -- "file" 检出head版本某一个文件(也用于错误回退)
+
+12 git branch  "分支名" #创建一个分支
+
+13 git branch  #查看本地分支
+
+本地和远程
+14 git pull #拉取远程的内容到本地
+
+15 git push #把本地仓库推送到远程仓库
+
+16 git clone "git地址" 从远程git仓库下载到本地
+
+
+
+
+
+
+
